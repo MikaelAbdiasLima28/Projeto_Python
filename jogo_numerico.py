@@ -15,4 +15,4 @@ def escolher_dificuldade():
         elif escolha == '3':
             return 100
         else:
-            print("Opção inválida. Tente novamente.")
+            print("Resposta errada. Tente novamente.")
