@@ -16,3 +16,5 @@ def escolher_dificuldade():
             return 100
         else:
             print("Resposta errada. Tente novamente.")
+far
+nao
