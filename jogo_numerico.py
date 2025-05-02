@@ -4,7 +4,7 @@ def escolher_dificuldade():
     print("\nEscolha o nível de dificuldade:")
     print("1 - Fácil (1 a 10)")
     print("2 - Médio (1 a 50)")
-    print("3 - Difícil (1 a 100)")
+    print("3 - Difícil (1 a 1000)")
 
     while True:
         escolha = input("Digite o número da dificuldade: ")
