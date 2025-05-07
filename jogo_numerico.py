@@ -18,6 +18,7 @@ def escolher_dificuldade():
             print("Resposta errada. Tente novamente.")
 def jogar_rodada(limite):
     numero_secreto = random.randint(1, limite)
+    tentativas = 0
     print(f"\n Um número entre 1 e {limite} foi escolhido...")
 
     while True:
