@@ -16,3 +16,20 @@ def escolher_dificuldade():
             return 100
         else:
             print("Resposta errada. Tente novamente.")
+def jogar_rodada(limite):
+    numero_secreto = random.randint(1, limite)
+    print(f"\n Um número entre 1 e {limite} foi escolhido...")
+
+    while True:
+        try:
+            palpite = int(input("Qual é o seu palpite? "))
+            tentativas += 1
+            if palpite < numero_secreto:
+                print("Muito baixo! Tente um número maior.")
+            elif palpite > numero_secreto:
+                print("Muito alto! Tente um número menor.")
+            else:
+                print(f"Parabéns! Você acertou em {tentativas} tentativa(s).")
+                return tentativas
+        except ValueError:
+            print("Por favor, digite um número válido.")
