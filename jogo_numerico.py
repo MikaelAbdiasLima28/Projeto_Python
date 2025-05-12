@@ -34,3 +34,23 @@ def jogar_rodada(limite):
                 return tentativas
         except ValueError:
             print("Por favor, digite um número válido.")
+def jogo_principal():
+    print("Bem-vindo ao Jogo de Adivinhação!")
+
+    placar = []
+    while True:
+        limite = escolher_dificuldade()
+        tentativas = jogar_rodada(limite)
+        placar.append(tentativas)
+
+        jogar_novamente = input("Deseja jogar novamente? (s/n): ").lower()
+        if jogar_novamente != 's':
+            break 
+
+    print("\n Placar Final:")
+    for i, t in enumerate(placar, start=1):
+        print(f"Rodada {i}: {t} tentativa(s)")
+
+    print("Obrigado por jogar!")
+
+jogo_principal()
