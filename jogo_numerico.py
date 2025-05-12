@@ -44,7 +44,7 @@ def jogo_principal():
         placar.append(tentativas)
 
         jogar_novamente = input("Deseja jogar novamente? (s/n): ").lower()
-        if jogar_novamente != 's':
+        if not jogar_novamente.startswith('s'):
             break 
 
     print("\n Placar Final:")
